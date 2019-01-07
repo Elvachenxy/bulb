@@ -1,5 +1,5 @@
 # Bulb 
-## An Android app that provides college students with mental health resources and an anonymous community.
+## An Android app that provides college students with mental health resources and connects them with an anonymous community.
 Designed and developed at CS 160 User Inferface Design and Development, at UC Berkeley, in Fall 2018
 
 By Brandon David, Elva Chen, Emma Jaeger, Griffin Pretcher, Serra Park
