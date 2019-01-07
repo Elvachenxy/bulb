@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Bulb</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="search_for_therapists_nearby">Search for therapists nearby</string>
+    <string name="bulb_google_api_key">AIzaSyDn103BugowwXYYxkwq5x4BhYDlA2-DCyM</string>
+    <string name="qa"><big>Q&amp;A</big></string>
+    <string name="user_posts"><big>Your Posts</big></string>
+    <string name="following_posts"><big>Following Posts</big></string>
+    <string name="logout"><big>Logout</big></string>
+    <string name="no_mentions">mentioned by 0 users</string>
+
+    <string name="loc">Therapist Locator</string>
+    <string name="forum">Q&amp;A</string>
+
+</resources>

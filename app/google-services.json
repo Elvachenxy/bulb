@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "184008437207",
+    "firebase_url": "https://cs160-bulb.firebaseio.com",
+    "project_id": "cs160-bulb",
+    "storage_bucket": "cs160-bulb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:184008437207:android:d4bd679449eaa37d",
+        "android_client_info": {
+          "package_name": "com.bulb.bulb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "184008437207-g7iv2g3a08hmu9evpkikmhqv75crbck1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQH0hPdNADHJ5EwBaR_CqhkkcYVGsf0Ww"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

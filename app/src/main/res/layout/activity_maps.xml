@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bulb.bulb.MapsActivity">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+    <EditText
+        android:id="@+id/search_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:hint="anxiety"
+        android:imeOptions="actionDone"
+
+        android:padding="8dp"
+        android:singleLine="true"
+        app:layout_constraintEnd_toStartOf="@+id/search_button"
+        app:layout_constraintStart_toStartOf="@+id/map"
+        app:layout_constraintTop_toTopOf="@+id/map" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorMain"
+        app:layout_constraintBottom_toBottomOf="@+id/search_button"
+        app:layout_constraintEnd_toEndOf="@+id/search_button"
+        app:layout_constraintStart_toEndOf="@+id/search_edit_text"
+        app:layout_constraintTop_toTopOf="@+id/search_button" />
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_search_black_24dp"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textSize="24sp"
+        app:layout_constraintCircleRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/map" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/info_view"
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/rounded_corner_white"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/map">
+
+        <TextView
+            android:id="@+id/info_window_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:padding="5dp"
+            android:text="NAME"
+            app:layout_constraintBottom_toTopOf="@id/info_window_subtitle"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/info_window_mentions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="MENTIONS"
+            app:layout_constraintLeft_toRightOf="@id/info_window_title" />
+
+        <TextView
+            android:id="@+id/info_window_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:padding="5dp"
+            android:text="DETAIL"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/info_window_title" />
+
+        <TextView
+            android:id="@+id/info_window_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:onClick="onClickViewDetails"
+            android:padding="5dp"
+            android:text="View Details"
+            android:textColor="@color/colorMain"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/info_window_subtitle" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.design.widget.BottomNavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="start"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/menu_nav" >
+
+    </android.support.design.widget.BottomNavigationView>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="0dp">
+
+    </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/exit_button"
+        android:layout_width="28sp"
+        android:layout_height="28sp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_baseline_clear_24px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/main_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="79dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:gravity="top|left"
+        android:hint="Respond to the post here."
+        android:imeOptions="actionDone"
+        android:inputType="textMultiLine"
+        android:maxLength="280"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/user_icon"
+        app:layout_constraintTop_toBottomOf="@+id/post_button" />
+
+    <Button
+        android:id="@+id/post_button"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="POST"
+        android:textColor="#F5A67E"
+        android:textColorLink="#F5A67E"
+        android:textSize="18sp"
+        android:theme="@style/boldFont"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/user_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exit_button"
+        app:srcCompat="@mipmap/llama_icon_round" />
+
+    <TextView
+        android:id="@+id/recommend_therapist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_corner"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:padding="8dp"
+        android:text="Recommend A Therapist"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/main_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/main_edit_text" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/review_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/user_icon"
+        app:layout_constraintTop_toBottomOf="@+id/main_edit_text">
+
+        <View
+            android:id="@+id/comment_therapist_cell"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/background_rounded"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/review_container"
+            app:layout_constraintStart_toStartOf="@+id/review_container"
+            app:layout_constraintTop_toTopOf="@+id/review_container" />
+
+        <TextView
+            android:id="@+id/comment_therapist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:textColor="#1E2836"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="@+id/comment_therapist_cell"
+            app:layout_constraintTop_toTopOf="@+id/comment_therapist_cell"
+            tools:text="Dr. asdf asdf" />
+
+        <TextView
+            android:id="@+id/comment_therapist_view_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="top|left"
+            android:padding="0dp"
+            android:text="View Detail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/comment_therapist_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="bottom"
+            android:text="TextView"
+            android:textColor="@color/colorMain"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/comment_therapist_name" />
+
+        <TextView
+            android:id="@+id/insurance_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:text="Insurance:"
+            app:layout_constraintStart_toStartOf="@+id/comment_therapist_cell"
+            app:layout_constraintTop_toBottomOf="@+id/comment_therapist_view_detail" />
+
+        <TextView
+            android:id="@+id/comment_therapist_insurance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/insurance_label"
+            app:layout_constraintTop_toBottomOf="@+id/comment_therapist_view_detail" />
+
+        <TextView
+            android:id="@+id/website_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:text="Website:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/comment_therapist_insurance" />
+
+        <TextView
+            android:id="@+id/comment_therapist_website"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/website_label"
+            app:layout_constraintTop_toBottomOf="@+id/comment_therapist_insurance" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:text="Address:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:text="Phone #:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/comment_therapist_name" />
+
+        <ImageView
+            android:id="@+id/edit_therapist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:tint="@color/colorMain"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_edit_black_24dp" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/recommend_therapist_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
