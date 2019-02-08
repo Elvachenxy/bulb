@@ -19,3 +19,5 @@ on your emulator of choice. No further steps should be required.
 
 ### Acknowledgements
 This implementation uses Google Places API and Firebase. All client and API keys are proprietary and should be replaced with personal keys if a nontrivial amount of queries are to be made.
+
+#### For more information on the project, you can visit https://www.elvachenxy.com/bulb/
